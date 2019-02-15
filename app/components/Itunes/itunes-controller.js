@@ -14,6 +14,8 @@ function drawSongs() {
 class ItunesController {
   constructor() {
     //BE SURE TO REGISTER YOUR SUBSCRIBERS!!!!!!!
+    console.log('controller built')
+    itunesService.addSubscriber('songs', drawSongs)
   }
 
 
