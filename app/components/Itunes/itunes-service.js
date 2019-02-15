@@ -1,5 +1,5 @@
 import Song from "../../models/Song.js";
-
+// Private
 
 let _state = {
   songs: []
@@ -13,6 +13,16 @@ function setState(prop, data) {
   _state[prop] = data
   _subscribers[prop].forEach(fn => fn())
 }
+// Public
+
+
+
+
+
+
+
+
+
 
 //DO NOT MODIFY
 class ItunesService {

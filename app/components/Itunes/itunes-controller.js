@@ -3,10 +3,15 @@ import ItunesService from "./itunes-service.js";
 const itunesService = new ItunesService()
 
 function drawSongs() {
+  let template = '';
+  let tem1 = itunesService.Songs
+  tem1.forEach(song => {
+    template += song.Template
+  })
   //changes button back to GET MUSIC once songs are loaded
   document.querySelector('#get-music-button').textContent = 'GET MUSIC'
+  document.querySelector('#stuff').innerHTML = template
   console.log(itunesService.Songs)
-
 }
 
 
