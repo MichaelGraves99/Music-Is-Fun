@@ -9,30 +9,23 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <title>Music Is Fun!</title>
-
-
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-    </form>
-    <div id="songs">
-
-    </div>
-    <section>
-        <div>
-            <h1>some output</h1>
-        </div>
+    <section class="form1 cen">
+        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+            <div class="form-group">
+                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+            </div>
+        </form>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
-                <div id="stuff"></div>
+        <div class="container-fluid">
+            <div class="row" id="stuff">
+
+            </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

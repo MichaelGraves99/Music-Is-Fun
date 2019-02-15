@@ -11,18 +11,23 @@ export default class Song {
 
 
     get Template() {
-        return `<div class="card">
-        <img src="${this.albumArt}" class="card-img-top" alt="...">
+        return `
+        <div class="col-lg-3 col-md-4 col-sm-12 card">
+        <img src="${this.albumArt}" class="card-img-top img-fluid cen pd-3" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${this.title}</h5>
             </div>
-            <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush cen pd-3">
                 <li class="list-group-item">${this.artist}</li>
                 <li class="list-group-item">${this.price}</li>
-                <li class="list-group-item">${this.preview}</li>
             </ul>
-            
-        /div> `
+           <div>
+            <audio controls class="cen pd-3">
+                <source src="${this.preview}" type="audio/mpeg"/>
+                Your browser does not support the audio element.
+            </audio >
+           </div >
+        </div> `
     }
 
 }
