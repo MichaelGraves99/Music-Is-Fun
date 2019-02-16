@@ -7,6 +7,7 @@ export default class Song {
         this.collection = song.collectionName
         this.price = song.collectionPrice
         this.preview = song.previewUrl
+        this.kind = song.kind
     }
 
 

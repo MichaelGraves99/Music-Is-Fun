@@ -1,4 +1,32 @@
-.cen{
+.fa{
+  font-family: 'Pacifico', cursive;
+}
+.fb{
+  font-family: 'Vollkorn', serif;
+}
+.fc{
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+.hrem3{
+  height: 9rem;
+}
+
+
+.cen {
   display: flex;
   justify-content: center;
   }
+  #mainNavbar {
+    background-color: black;
+    font-size: 3rem;
+    font-weight: 200;
+    color: white;
+  }
+  #mainNavbarBrand {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: white;
+  }
+
+
+
