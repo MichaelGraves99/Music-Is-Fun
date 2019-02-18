@@ -12,22 +12,29 @@
     <title>Music Is Fun!</title>
 </head>
 
-<body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top hrem3">
-        <div id="mainNavbarBrand" class="navbar-brand fa">MMMusic</div>
+
+<section class="row">
+    <nav id="mainNavbar" class="navbar navbar-dark py-0 fixed-top hrem3 cen">
+        <div id="mainNavbarBrand" class="col col-sm-6 fa">MMMusic</div>
         <div>
-            <section class="cen">
-                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+            <section>
+                <!-- was form-inline -->
+                <form class="col col-sm-6 form-inline cen" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                     <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                    <!-- was form-group -->
                     <div class="form-group">
-                        <input type="text" class="form-control mx-2" name="artist" placeholder="Artist Name" />
-                        <button type="submit" class="btn btn-primary mx-2" id="get-music-button">Get Music</button>
+                        <div class="btn-group">
+                            <input type="text" class="form-control mr-1" name="artist" placeholder="Artist Name" />
+                            <button type="submit" class="btn btn-primary ml-1" id="get-music-button">Search</button>
+                        </div>
                     </div>
                 </form>
             </section>
         </div>
     </nav>
+</section>
 
+<body class="bdy">
     <section>
         <div class="container-fluid">
             <div class="row" id="stuff">

@@ -10,15 +10,30 @@
 .hrem3{
   height: 9rem;
 }
-
-
+.bdy{
+  padding-top: 9rem;
+  background: url("pattern2.jpeg");
+}
 .cen {
   display: flex;
   justify-content: center;
   }
+.card{
+  background-color: transparent;
+  color:blue;
+}
+.list-group {
+  background-color: lightgray;
+  color: red;
+}
+
+
+
+
+
   #mainNavbar {
     background-color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
     color: white;
   }
@@ -27,6 +42,12 @@
     font-weight: 200;
     color: white;
   }
-
+@media(max-width: 500px){
+    #mainNavbarBrand{
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    font-size: 2.5rem;
+}
 
 

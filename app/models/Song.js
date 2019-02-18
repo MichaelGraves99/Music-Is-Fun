@@ -14,20 +14,22 @@ export default class Song {
     get Template() {
         return `
         <div class="col-lg-3 col-md-4 col-sm-12 card">
-        <img src="${this.albumArt}" class="card-img-top img-fluid cen pd-3" alt="...">
+        <img src="${this.albumArt}" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${this.title}</h5>
             </div>
-            <ul class="list-group list-group-flush cen pd-3">
-                <li class="list-group-item">${this.artist}</li>
-                <li class="list-group-item">${this.price}</li>
-            </ul>
-           <div>
-            <audio controls class="cen pd-3">
-                <source src="${this.preview}" type="audio/mpeg"/>
-                Your browser does not support the audio element.
-            </audio >
-           </div >
+            <div class="card cen">
+                <ul class="list-group pd-3 cen">
+                    <li class="list-group-item bg-transparent">${this.artist}</li>
+                    <li class="list-group-item">${this.price}</li>
+                </ul>
+            </div>
+            <div class="cen"> 
+                <audio controls class="pd-3">
+                    <source src="${this.preview}" type="audio/mpeg"/>
+                    Your browser does not support the audio element.
+                </audio >
+            </div >
         </div> `
     }
 

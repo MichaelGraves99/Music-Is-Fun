@@ -12,7 +12,7 @@ function drawSongs() {
     }
   })
   //changes button back to GET MUSIC once songs are loaded
-  document.querySelector('#get-music-button').textContent = 'GET MUSIC'
+  document.querySelector('#get-music-button').textContent = 'Search'
   document.querySelector('#stuff').innerHTML = template
 }
 
@@ -26,12 +26,13 @@ class ItunesController {
   }
 
 
+
   //DO NOT MODIFY THIS METHOD
   getMusic(e) {
     e.preventDefault();
     var artist = e.target.artist.value;
     //changes the button to loading while songs load
-    document.querySelector('#get-music-button').textContent = 'LOADING....'
+    document.querySelector('#get-music-button').textContent = 'Wait for it...'
     itunesService.getMusicByArtist(artist)
   }
 }
